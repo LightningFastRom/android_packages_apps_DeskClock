@@ -27,10 +27,10 @@
         <item name="android:windowBackground">@color/default_background</item>
         <item name="android:windowContentOverlay">@null</item>
 
-        <!-- Attributes from androidx.appcompat.appcompat -->
-        <item name="colorAccent">#DA4336</item>
+        <!-- Attributes from android.support.v7.appcompat -->
+        <item name="colorAccent">@color/default_Accent</item>
         <item name="colorBackgroundFloating">#303030</item>
-        <item name="colorControlActivated">@android:color/white</item>
+        <item name="colorControlActivated">@color/default_Accent</item>
         <item name="colorControlNormal">?android:attr/textColorPrimary</item>
         <item name="colorPrimaryDark">#66000000</item>
         <item name="imageButtonStyle">@style/Widget.ImageButton</item>
