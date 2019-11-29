@@ -42,10 +42,14 @@
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+				android:color="@color/tab_tint_color" 
                 app:tabGravity="fill"
-                app:tabIndicatorColor="@android:color/transparent"
+                app:tabIndicatorColor="@color/default_Accent"
+				app:tabSelectedTextColor="@color/default_Accent"
+				app:tabTextColor="@color/tab_tint_color"
                 app:tabMaxWidth="0dp"
                 app:tabMode="fixed"
+				app:tabIndicatorFullWidth="false"
                 app:tabPaddingEnd="0dp"
                 app:tabPaddingStart="0dp" />
 

@@ -19,15 +19,18 @@
 
     <item
         android:state_focused="true"
+		android:fillColor="@color/tab_tint_color"
         android:drawable="@drawable/ic_tab_clock_static" />
 
     <item
         android:id="@+id/on"
         android:state_selected="true"
+		android:fillColor="@color/tab_tint_color"
         android:drawable="@drawable/ic_tab_clock_static" />
 
     <item
         android:id="@+id/off"
+		android:fillColor="@color/tab_tint_color"
         android:drawable="@drawable/ic_tab_clock_static" />
 
     <transition
@@ -37,9 +40,11 @@
         <animated-vector android:drawable="@drawable/ic_clock">
             <target
                 android:name="hour_hand"
+				android:fillColor="@color/tab_tint_color"
                 android:animation="@animator/ic_clock_hour_hand_animation" />
             <target
                 android:name="minute_hand"
+				android:fillColor="@color/tab_tint_color"
                 android:animation="@animator/ic_clock_minute_hand_animation" />
         </animated-vector>
 
