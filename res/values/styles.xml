@@ -98,6 +98,7 @@
     <style name="TextAppearance.Tab" parent="TextAppearance.Design.Tab">
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:textSize">12sp</item>
+		<item name="colorControlActivated">?attr/colorAccent</item>
     </style>
 
     <style name="Widget.ActionBar" parent="Widget.AppCompat.ActionBar">

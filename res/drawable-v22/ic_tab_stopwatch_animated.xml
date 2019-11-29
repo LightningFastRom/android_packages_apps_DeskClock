@@ -19,15 +19,18 @@
 
     <item
         android:state_focused="true"
+		android:fillColor="@color/tab_tint_color"
         android:drawable="@drawable/ic_tab_stopwatch_static" />
 
     <item
         android:id="@+id/on"
         android:state_selected="true"
+		android:fillColor="@color/tab_tint_color"
         android:drawable="@drawable/ic_tab_stopwatch_static" />
 
     <item
         android:id="@+id/off"
+		android:fillColor="@color/tab_tint_color"
         android:drawable="@drawable/ic_tab_stopwatch_static" />
 
     <transition

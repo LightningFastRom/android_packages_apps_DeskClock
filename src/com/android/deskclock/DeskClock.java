@@ -21,9 +21,11 @@ import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
 import android.app.Fragment;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
+import android.graphics.PorterDuff; 
 import android.os.Bundle;
 import androidx.annotation.StringRes;
 import com.google.android.material.snackbar.Snackbar;
@@ -172,6 +174,8 @@ public class DeskClock extends BaseActivity
 
         // Create the tabs that make up the user interface.
         mTabLayout = (TabLayout) findViewById(R.id.tabs);
+		mTabLayout.setSelectedTabIndicatorHeight((int) (2 * getResources().getDisplayMetrics().density));
+
         final int tabCount = UiDataModel.getUiDataModel().getTabCount();
         final boolean showTabLabel = getResources().getBoolean(R.bool.showTabLabel);
         final boolean showTabHorizontally = getResources().getBoolean(R.bool.showTabHorizontally);
@@ -294,20 +298,27 @@ public class DeskClock extends BaseActivity
         // Mirror changes made to the selected page of the view pager into UiDataModel.
         mFragmentTabPager.addOnPageChangeListener(new PageChangeWatcher());
         mFragmentTabPager.setAdapter(mFragmentTabPagerAdapter);
-
-        // Mirror changes made to the selected tab into UiDataModel.
+		Context context = this;
+		// Selected Tab Icon Color
+		int selectedIconColor = ContextCompat.getColor(context, R.color.default_Accent);
+		// Normal Tab Icon Color
+		int normalTabIconColor = ContextCompat.getColor(context, R.color.white_63p);        
+		// Mirror changes made to the selected tab into UiDataModel.
         mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 UiDataModel.getUiDataModel().setSelectedTab((UiDataModel.Tab) tab.getTag());
+                tab.getIcon().setColorFilter(selectedIconColor, PorterDuff.Mode.SRC_IN);
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
+                tab.getIcon().setColorFilter(normalTabIconColor, PorterDuff.Mode.SRC_IN);
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
+				tab.getIcon().setColorFilter(selectedIconColor, PorterDuff.Mode.SRC_IN);
             }
         });
 

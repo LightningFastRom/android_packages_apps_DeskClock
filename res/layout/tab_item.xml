@@ -22,5 +22,7 @@
     android:drawablePadding="10dp"
     android:gravity="center"
     android:includeFontPadding="false"
+	android:color="@color/tab_tint_color"
+	android:textColor="@color/tab_tint_color"
     android:singleLine="true"
     android:textAppearance="@style/TextAppearance.Tab" />
