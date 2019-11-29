@@ -305,7 +305,7 @@ public class DeskClock extends BaseActivity
 		// Selected Tab Icon Color
 		int selectedIconColor = ContextCompat.getColor(context, R.color.default_Accent);
 		// Normal Tab Icon Color
-		int normalTabIconColor = ContextCompat.getColor(context, R.color.white_63p);        
+		int normalTabIconColor = ContextCompat.getColor(context, R.color.white);        
 		// Mirror changes made to the selected tab into UiDataModel.
         mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
