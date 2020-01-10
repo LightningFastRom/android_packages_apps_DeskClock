@@ -36,5 +36,5 @@
 	<color name="default_Accent">#DA4336</color>
 
     <!-- shadowColor for widget text -->
-    <color name="widget_shadow_color">#67000000</color>
+    <color name="widget_shadow_color">#000000</color>
 </resources>
