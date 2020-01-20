@@ -309,17 +309,23 @@ public class DeskClock extends BaseActivity
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 UiDataModel.getUiDataModel().setSelectedTab((UiDataModel.Tab) tab.getTag());
-                tab.getIcon().setColorFilter(selectedIconColor, PorterDuff.Mode.SRC_IN);
+                if (tab.getIcon() != null) {
+                    tab.getIcon().setColorFilter(selectedIconColor, PorterDuff.Mode.SRC_IN);
+                }
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-                tab.getIcon().setColorFilter(normalTabIconColor, PorterDuff.Mode.SRC_IN);
+                if (tab.getIcon() != null) {
+                    tab.getIcon().setColorFilter(normalTabIconColor, PorterDuff.Mode.SRC_IN);
+                }
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-				tab.getIcon().setColorFilter(selectedIconColor, PorterDuff.Mode.SRC_IN);
+                if (tab.getIcon() != null) {
+                    tab.getIcon().setColorFilter(selectedIconColor, PorterDuff.Mode.SRC_IN);
+                }
             }
         });
 
