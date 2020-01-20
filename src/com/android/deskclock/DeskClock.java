@@ -202,8 +202,9 @@ public class DeskClock extends BaseActivity
                 final Drawable icon = tab.getIcon();
                 if (showTabHorizontally) {
                     // Remove the icon so it doesn't affect the minimum TabLayout height.
-                    tab.setIcon(null);
-                    text.setCompoundDrawablesRelativeWithIntrinsicBounds(icon, null, null, null);
+                    //tab.setIcon(null);
+                    //text.setCompoundDrawablesRelativeWithIntrinsicBounds(icon, null, null, null);
+                    text.setCompoundDrawablesRelativeWithIntrinsicBounds(null, icon, null, null);
                 } else {
                     text.setCompoundDrawablesRelativeWithIntrinsicBounds(null, icon, null, null);
                 }
@@ -309,23 +310,17 @@ public class DeskClock extends BaseActivity
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 UiDataModel.getUiDataModel().setSelectedTab((UiDataModel.Tab) tab.getTag());
-                if (tab.getIcon() != null) {
-                    tab.getIcon().setColorFilter(selectedIconColor, PorterDuff.Mode.SRC_IN);
-                }
+                tab.getIcon().setColorFilter(selectedIconColor, PorterDuff.Mode.SRC_IN);
             }
 
             @Override
             public void onTabUnselected(TabLayout.Tab tab) {
-                if (tab.getIcon() != null) {
-                    tab.getIcon().setColorFilter(normalTabIconColor, PorterDuff.Mode.SRC_IN);
-                }
+                tab.getIcon().setColorFilter(normalTabIconColor, PorterDuff.Mode.SRC_IN);
             }
 
             @Override
             public void onTabReselected(TabLayout.Tab tab) {
-                if (tab.getIcon() != null) {
-                    tab.getIcon().setColorFilter(selectedIconColor, PorterDuff.Mode.SRC_IN);
-                }
+                tab.getIcon().setColorFilter(selectedIconColor, PorterDuff.Mode.SRC_IN);
             }
         });
 
