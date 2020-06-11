@@ -15,7 +15,7 @@
   limitations under the License.
   -->
 
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -34,7 +34,7 @@
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@null"
+            android:background="@color/secondary_color"
             app:elevation="0dp">
 
             <androidx.appcompat.widget.Toolbar
@@ -115,17 +115,19 @@
         </LinearLayout>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/content"
-        android:background="@color/default_background"
-        app:menu="@menu/bottom_navigation_menu"
+        android:background="@color/secondary_color"
         app:itemHorizontalTranslationEnabled="false"
+        app:menu="@menu/bottom_navigation_menu"
         app:itemIconTint="@color/tab_tint_color"
         app:itemTextColor="@color/tab_tint_color"
         app:itemTextAppearanceActive="@style/navText"
         app:itemTextAppearanceInactive="@style/navText"
         app:labelVisibilityMode="labeled" />
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

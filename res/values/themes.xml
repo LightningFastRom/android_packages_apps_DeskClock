@@ -26,6 +26,7 @@
         <item name="android:timePickerStyle" tools:targetApi="21">@style/Widget.TimePicker</item>
         <item name="android:windowBackground">@color/default_background</item>
         <item name="android:windowContentOverlay">@null</item>
+		<item name="android:statusBarColor">@color/secondary_color</item>
 
         <!-- Attributes from android.support.v7.appcompat -->
         <item name="colorAccent">@color/default_Accent</item>
@@ -43,7 +44,8 @@
         <item name="colorControlActivated">?attr/colorAccent</item>
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">false</item>
-
+		<item name="android:statusBarColor">@color/secondary_color</item>
+		
         <!-- Attributes from androidx.preference.-->
         <item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
     </style>
@@ -53,6 +55,7 @@
         <item name="actionBarStyle">@style/Widget.ActionBar</item>
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">false</item>
+		<item name="android:statusBarColor">@color/secondary_color</item>
     </style>
 
     <style name="Theme.DeskClock.CitySelection">
@@ -60,6 +63,7 @@
         <item name="actionBarStyle">@style/Widget.ActionBar.NoTitle</item>
         <item name="windowActionBar">true</item>
         <item name="windowNoTitle">false</item>
+		<item name="android:statusBarColor">@color/secondary_color</item>
     </style>
 
     <style name="ThemeOverlay.Control.Accent" parent="ThemeOverlay.AppCompat">

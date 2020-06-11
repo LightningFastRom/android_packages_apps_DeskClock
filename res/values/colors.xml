@@ -38,4 +38,6 @@
 
     <!-- shadowColor for widget text -->
     <color name="widget_shadow_color">#000000</color>
+    <color name="secondary_color">#000000</color>
+    <color name="accent_color">#DA4336</color>
 </resources>
