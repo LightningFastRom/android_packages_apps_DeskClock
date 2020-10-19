@@ -182,7 +182,7 @@ public final class AlarmTimeClickHandler {
         Events.sendAlarmEvent(R.string.action_set_label, R.string.label_deskclock);
         final LabelDialogFragment fragment =
                 LabelDialogFragment.newInstance(alarm, alarm.label, mFragment.getTag());
-        LabelDialogFragment.show(mFragment.getFragmentManager(), fragment);
+        LabelDialogFragment.show(mFragment.getParentFragmentManager(), fragment);
     }
 
     public void onTimeSet(int hourOfDay, int minute) {

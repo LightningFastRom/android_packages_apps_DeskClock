@@ -26,7 +26,6 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.os.ParcelUuid;
 import androidx.loader.content.CursorLoader;
 
 import com.android.deskclock.R;

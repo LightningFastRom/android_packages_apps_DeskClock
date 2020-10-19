@@ -50,6 +50,8 @@ import com.android.deskclock.widget.toast.SnackbarManager;
 import com.android.deskclock.widget.toast.ToastManager;
 import com.google.android.material.snackbar.Snackbar;
 
+import com.google.android.material.snackbar.Snackbar;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -187,7 +189,7 @@ public final class AlarmClockFragment extends DeskClockFragment implements
         super.onStart();
 
         if (!isTabSelected()) {
-            TimePickerDialogFragment.removeTimeEditDialog(getFragmentManager());
+            TimePickerDialogFragment.removeTimeEditDialog(getParentFragmentManager());
         }
     }
 

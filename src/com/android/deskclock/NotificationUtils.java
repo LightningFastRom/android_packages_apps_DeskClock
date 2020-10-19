@@ -157,7 +157,6 @@ public class NotificationUtils {
         deleteChannel(nm, "StopwatchNotification");
         deleteChannel(nm, "alarmNotification");
         deleteChannel(nm, "TimerModelNotification");
-        deleteChannel(nm, "firingAlarmsTimersNotification");
         deleteChannel(nm, "alarmSnoozeNotification");
 
         // We recreate all existing channels so any language change or our name changes propagate

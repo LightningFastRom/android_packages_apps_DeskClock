@@ -48,7 +48,7 @@ public final class FragmentUtils {
     /** The current fragment displayed to the user. */
     private DeskClockFragment mCurrentPrimaryItem;
 
-    FragmentUtils(DeskClock deskClock) {
+    public FragmentUtils(DeskClock deskClock) {
         mDeskClock = deskClock;
         mFragmentCache = new ArrayMap<>(getCount());
         mFragmentManager = deskClock.getSupportFragmentManager();

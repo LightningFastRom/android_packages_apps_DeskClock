@@ -553,6 +553,7 @@ public class DeskClock extends BaseActivity
             // If the hide animation has already completed, the buttons must be updated now when the
             // new tab is known. Otherwise they are updated at the end of the hide animation.
             if (!mHideAnimation.isStarted()) {
+                getSupportFragmentManager().executePendingTransactions();
                 updateFab(FAB_AND_BUTTONS_IMMEDIATE);
             }
         }
