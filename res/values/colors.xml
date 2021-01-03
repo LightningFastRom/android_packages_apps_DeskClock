@@ -33,7 +33,7 @@
 
     <color name="clock_gray">#B3FFFFFF</color>
 
-    <color name="default_background">#212121</color>
+    <color name="default_background">#000000</color>
 	<color name="default_Accent">#DA4336</color>
 
     <!-- shadowColor for widget text -->
