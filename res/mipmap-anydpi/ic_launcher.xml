@@ -4,7 +4,7 @@
     <background android:drawable="@color/blue_grey_100" />
     <foreground>
         <layer-list>
-            <item android:drawable="@mipmap/launcher_clock_base" />
+            <item android:drawable="@drawable/launcher_clock_base" />
             <item>
                 <rotate android:drawable="@mipmap/launcher_clock_hour" android:fromDegrees="300.0" android:toDegrees="5300.0" android:pivotX="50.0%" android:pivotY="50.0%" />
             </item>
